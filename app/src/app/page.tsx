@@ -53,7 +53,7 @@ export default function DashboardPage() {
       href: '/interoperability',
       desc: 'Map cross-border CBDC projects, BIS initiatives, shared ledger experiments, and technical standards like ISO 20022.',
       count: interopProjects.length,
-      highlight: 'mBridge, Nexus, Agorá',
+      highlight: 'mBridge, Dunbar, Agorá',
     },
   ];
 
@@ -66,15 +66,14 @@ export default function DashboardPage() {
     <div className="space-y-12">
       {/* Hero */}
       <div className="pt-4 pb-2">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/60 border border-indigo-800/40 text-indigo-300 text-xs font-medium mb-4">
-          <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse" />
-          Research Intelligence Platform
-        </div>
         <h1 className="text-3xl sm:text-4xl font-bold text-slate-100 leading-tight">
           Digital Money &amp; Financial Infrastructure
         </h1>
         <p className="mt-3 text-slate-400 max-w-2xl text-base leading-relaxed">
           A living, comparative intelligence base tracking CBDCs, stablecoins, tokenised assets, and international coordination across {jurisdictions.length} jurisdictions. Data sourced from central banks, BIS, and official regulators.
+        </p>
+        <p className="mt-4 text-xs text-slate-500 max-w-2xl leading-relaxed border-l-2 border-slate-700 pl-3">
+          The information on this platform is generated and maintained with the assistance of AI agents. It is provided for research and informational purposes only. Users should conduct independent due diligence and verify all data before acting on it.
         </p>
       </div>
 
