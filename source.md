@@ -72,7 +72,7 @@ Source types: `official` (central bank / government) | `BIS` | `regulator` | `in
 
 | ID | Title | Publisher | Type | Jurisdiction | URL | Last Verified |
 |---|---|---|---|---|---|---|
-| `mas-stablecoin` | Stablecoin Regulatory Framework | Monetary Authority of Singapore | official | Singapore | https://www.mas.gov.sg/regulation/payments/stablecoin-regulatory-framework | 2025-06-10 |
+| `mas-stablecoin` | MAS Finalises Stablecoin Regulatory Framework | Monetary Authority of Singapore | official | Singapore | https://www.mas.gov.sg/news/media-releases/2023/mas-finalises-stablecoin-regulatory-framework | 2026-06-17 |
 | `hkma-stablecoin-consult` | Stablecoin Consultation Conclusions (July 2024) | Hong Kong Monetary Authority | official | Hong Kong | https://www.hkma.gov.hk/eng/news-and-media/press-releases/2024/07/20240717-4/ | 2025-06-10 |
 | `hk-stablecoins-ordinance-cap656` | Stablecoins Ordinance (Cap. 656, Ord. 17 of 2025) | Hong Kong Government (elegislation.gov.hk) | official | Hong Kong | https://www.elegislation.gov.hk/hk/cap656 | 2026-06-10 |
 | `hkma-stablecoin-regime` | Regulatory Regime for Stablecoin Issuers | Hong Kong Monetary Authority | official | Hong Kong | https://www.hkma.gov.hk/eng/key-functions/international-financial-centre/stablecoin-issuers/ | 2026-06-10 |

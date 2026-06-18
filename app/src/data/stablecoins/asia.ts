@@ -15,7 +15,7 @@ export const asiaStablecoins: StablecoinJurisdiction[] = [
       consumerProtection: 'Clear disclosure of reserve composition. Prohibition on misleading marketing.',
       keyLegislation: [
         { title: 'Payment Services Act 2019 (amended 2023)', url: 'https://www.mas.gov.sg/regulation/acts/payment-services-act' },
-        { title: 'MAS Stablecoin Regulatory Framework (Aug 2023)', url: 'https://www.mas.gov.sg/regulation/payments/stablecoin-regulatory-framework' },
+        { title: 'MAS Stablecoin Regulatory Framework (Aug 2023)', url: 'https://www.mas.gov.sg/news/media-releases/2023/mas-finalises-stablecoin-regulatory-framework' },
       ],
     },
     regulatoryAuthorities: {
@@ -46,7 +46,7 @@ export const asiaStablecoins: StablecoinJurisdiction[] = [
     relationshipToCBDC: 'MAS has framed stablecoins and CBDC as complementary. Project Orchid explores programmable money potentially using either instrument. MAS stablecoin framework intentionally designed to be compatible with future CBDC infrastructure.',
     lastUpdated: '2025-05-01',
     sources: [
-      { title: 'MAS Stablecoin Regulatory Framework', url: 'https://www.mas.gov.sg/regulation/payments/stablecoin-regulatory-framework', publisher: 'Monetary Authority of Singapore', type: 'official' },
+      { title: 'MAS Stablecoin Regulatory Framework', url: 'https://www.mas.gov.sg/news/media-releases/2023/mas-finalises-stablecoin-regulatory-framework', publisher: 'Monetary Authority of Singapore', type: 'official' },
     ],
   },
   {
