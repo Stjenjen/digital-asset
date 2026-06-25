@@ -302,7 +302,7 @@ export default function HKSingaporeResearchPage() {
         <span className="font-semibold uppercase tracking-wider text-xs border border-amber-600 rounded px-1.5 py-0.5">
           Draft
         </span>
-        This page is an unpublished research draft. It is excluded from version control and will not appear in the public site.
+        This page is a research draft and is generated with the help of AI agent. Please use the information with your own discretion.
       </div>
 
       {/* ── Title block ── */}

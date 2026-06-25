@@ -9,7 +9,7 @@ test('page loads with title', async ({ page }) => {
 
 test('draft banner is visible', async ({ page }) => {
   await page.goto(PAGE);
-  await expect(page.getByText(/unpublished research draft/i)).toBeVisible();
+  await expect(page.getByText(/research draft and is generated with the help of AI agent/i)).toBeVisible();
 });
 
 test('all section headings are present', async ({ page }) => {
