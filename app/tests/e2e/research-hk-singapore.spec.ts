@@ -24,6 +24,7 @@ test('all section headings are present', async ({ page }) => {
     /FinTech Ecosystems/i,
     /Regulatory Philosophy/i,
     /Competitive Edge Summary/i,
+    /Analysis/i,
   ]) {
     await expect(page.getByRole('heading', { name: heading, level: 2 }).first()).toBeVisible();
   }
@@ -68,9 +69,20 @@ test('references contain external links', async ({ page }) => {
   await expect(refLinks.filter({ hasText: /Project Orchid/i }).first()).toBeVisible();
 });
 
+test('analysis section renders with scenario table and analyst take', async ({ page }) => {
+  await page.goto(PAGE);
+  await expect(page.getByRole('heading', { name: /Analysis: Scenarios for the Decade Ahead/i, level: 2 })).toBeVisible();
+  // Scenario table renders all four scenarios
+  for (const scenario of [/Multilateral Integration/i, /Dollar Tokenisation/i, /Bifurcation/i, /Fragmented Standoff/i]) {
+    await expect(page.getByText(scenario).first()).toBeVisible();
+  }
+  // Analyst's Take callout is present
+  await expect(page.getByTestId('analysis-take')).toBeVisible();
+});
+
 test('table of contents has correct anchor hrefs for each section', async ({ page }) => {
   await page.goto(PAGE);
-  const expectedAnchors = ['#introduction', '#cbdc', '#stablecoins', '#tokenised-deposits', '#cross-border', '#standards', '#fintech-ecosystem', '#regulatory-philosophy', '#competitive-edge', '#references'];
+  const expectedAnchors = ['#introduction', '#cbdc', '#stablecoins', '#tokenised-deposits', '#cross-border', '#standards', '#fintech-ecosystem', '#regulatory-philosophy', '#competitive-edge', '#analysis', '#references'];
   for (const anchor of expectedAnchors) {
     await expect(page.locator(`nav a[href="${anchor}"]`).first()).toBeVisible();
   }

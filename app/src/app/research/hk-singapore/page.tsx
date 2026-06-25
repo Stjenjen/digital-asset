@@ -359,6 +359,7 @@ export default function HKSingaporeResearchPage() {
             ['fintech-ecosystem', '6. FinTech Ecosystems & Flagship Events'],
             ['regulatory-philosophy', '7. Regulatory Philosophy'],
             ['competitive-edge', '8. Competitive Edge Summary'],
+            ['analysis', '9. Analysis: Scenarios for the Decade Ahead'],
             ['references', 'References'],
           ].map(([id, label]) => (
             <li key={id}>
@@ -1211,6 +1212,167 @@ export default function HKSingaporeResearchPage() {
             with or diverge from the global financial system? If integration, Hong Kong&apos;s
             position becomes enormously valuable. If divergence, Singapore&apos;s Western-facing
             multilateral network becomes the more resilient bet.
+          </p>
+        </div>
+      </section>
+
+      {/* ─────────────────────────────────────────────────────────────────────── */}
+      {/* SECTION 9: ANALYSIS — SCENARIOS FOR THE DECADE AHEAD */}
+      {/* ─────────────────────────────────────────────────────────────────────── */}
+      <section id="analysis">
+        <SectionHeading id="analysis">9. Analysis: Scenarios for the Decade Ahead</SectionHeading>
+        <div className="mb-5 rounded-lg border border-slate-700 bg-slate-900/40 px-4 py-3 text-sm text-slate-400 italic">
+          The preceding sections describe what each city-state has built. This section is the
+          analyst&apos;s own interpretation. It deliberately does <strong className="text-slate-300 not-italic">not</strong> declare
+          a winner, and it takes no view on whether a China-centred or a US-centred financial
+          order is preferable — the aim is to map how the same facts could play out under
+          materially different futures.
+        </div>
+        <p className="text-slate-300 leading-relaxed mb-4">
+          Read as a head-to-head race, the Singapore–Hong Kong contest invites a verdict. Read
+          more carefully, it resists one — because the outcome depends less on what either
+          regulator does next than on two structural questions that sit largely outside their
+          control. Rather than forecast a winner, the more defensible exercise is to isolate
+          those questions, treat them as axes of uncertainty, and ask where each city lands
+          under each combination.
+        </p>
+
+        <SubHeading>9.1 The Two Decisive Uncertainties</SubHeading>
+        <p className="text-slate-300 leading-relaxed mb-3">
+          <strong className="text-slate-100">Axis A — China connectivity.</strong> Does
+          China&apos;s digital-currency ecosystem — e-CNY domestically and Project mBridge
+          <Cite id="r14" /> across borders — ultimately <em>integrate</em> with the wider
+          international financial system, or <em>decouple</em> from it into a parallel bloc?
+          This is not a question of whether one outcome is desirable; both integration and
+          decoupling are plausible end-states with large, opposing consequences for any
+          financial centre positioned between China and the rest of the world.
+        </p>
+        <p className="text-slate-300 leading-relaxed mb-3">
+          <strong className="text-slate-100">Axis B — public vs. private rails.</strong> Does
+          cross-border value increasingly settle over <em>public</em> rails — wholesale CBDC and
+          multi-CBDC networks — or over <em>private</em> regulated instruments: tokenised bank
+          deposits and fiat-referenced stablecoins, a large share of them US-dollar
+          denominated? Each rail type has a credible path to dominance, and each carries its own
+          fragility: public rails depend on inter-central-bank cooperation that geopolitics can
+          interrupt, while private dollar rails depend on continued regulatory tolerance and on
+          the dollar&apos;s reach, both of which are contested.
+        </p>
+        <p className="text-slate-300 leading-relaxed mb-4">
+          Crossing the two axes yields four scenarios. They are not predictions, and their
+          probabilities are not estimated here; they are a frame for testing how durable each
+          city&apos;s position is.
+        </p>
+
+        <SubHeading>9.2 Four Scenarios</SubHeading>
+        <CompareTable
+          headers={['Scenario', 'Driving combination', 'Where Singapore fits', 'Where Hong Kong fits']}
+          rows={[
+            [
+              <><Pill color="emerald">Multilateral Integration</Pill></>,
+              'China integrates · public CBDC rails lead',
+              'Standards-authorship (Guardian, GL1) and a live wholesale network become the connective tissue linking blocs.',
+              'The China corridor turns into a premium asset: the regulated on-ramp between the largest CBDC ecosystem and global markets.',
+            ],
+            [
+              <><Pill color="indigo">Dollar Tokenisation</Pill></>,
+              'China integrates · private USD / deposit rails lead',
+              'Breadth across stablecoins, tokenised deposits and Western-aligned frameworks pays off; the corridor matters less than rail neutrality.',
+              'Bank-led stablecoin licensing and real-money digital bonds stay relevant; the China-gateway premium compresses.',
+            ],
+            [
+              <><Pill color="rose">Bifurcation</Pill></>,
+              'China decouples · public CBDC rails lead',
+              'Anchors the non-China multilateral bloc; its frameworks govern one side of a divided system.',
+              'Becomes the translation layer between two blocs — structurally valuable but politically exposed to both.',
+            ],
+            [
+              <><Pill color="amber">Fragmented Standoff</Pill></>,
+              'China decouples · private USD / deposit rails lead',
+              'Neutral standards-authorship is a hedge against fragmentation, but reach is capped by the divide.',
+              'Dual-system optionality is a hedge, but caught between a decoupled China and dollar-denominated private rails.',
+            ],
+          ]}
+        />
+        <p className="text-slate-300 leading-relaxed mb-4">
+          The pattern across all four is the same in one respect: in none of them does a single
+          city simply &quot;win.&quot; What changes is the <em>shape</em> of the niche each
+          occupies. Singapore&apos;s position is most naturally read as a neutral
+          standards-and-commercialisation layer; Hong Kong&apos;s as a China-facing settlement
+          gateway. The scenarios re-price those niches — they do not collapse them into a single
+          scoreboard.
+        </p>
+
+        <SubHeading>9.3 Cross-Cutting Risks</SubHeading>
+        <p className="text-slate-300 leading-relaxed mb-4">
+          Each city&apos;s strength is also the source of its sharpest risk, and the two risk
+          profiles are best read side by side rather than ranked.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+          <EdgeBox
+            title="Singapore — Key Risks"
+            color="green"
+            items={[
+              'Commercialisation-first can become a "winner’s curse" if the standards it has authored fragment into competing regional variants',
+              'Its frameworks (Guardian, GL1) only matter if others adopt them — influence is borrowed from the market, not guaranteed',
+              'The post-2020 inflow of talent and capital from Hong Kong could slow or reverse if conditions normalise',
+            ]}
+          />
+          <EdgeBox
+            title="Hong Kong — Key Risks"
+            color="blue"
+            items={[
+              'The China corridor is high-beta: large upside if integration deepens, but exposed to sanctions risk and one-country-two-systems trajectory',
+              'The USD peg constrains monetary-rail flexibility even as it provides stability',
+              'Concentration in a handful of banking majors (HSBC, StanChart, BOCHK) narrows the base of its digital-asset ecosystem',
+            ]}
+          />
+        </div>
+        <p className="text-slate-300 leading-relaxed mb-4">
+          Both also share an exogenous risk that cuts beneath the rivalry entirely: if regulated
+          stablecoins and tokenised bank deposits scale faster than either public CBDC
+          programme, the centre of gravity in digital money could shift toward private rails —
+          making <em>both</em> cities&apos; CBDC investments less central than today&apos;s
+          framing assumes. That pressure is symmetric; it favours neither a China-led nor a
+          US-led outcome on its own.
+        </p>
+
+        <SubHeading>9.4 Leading Indicators to Watch</SubHeading>
+        <p className="text-slate-300 leading-relaxed mb-3">
+          Because the decisive variables are exogenous, the most useful posture is to track
+          falsifiable signals rather than to forecast. Over 2026&ndash;2030, the following would
+          move the picture:
+        </p>
+        <ul className="space-y-2 mb-2">
+          {[
+            'Whether Project mBridge moves from pilot to production with live cross-border value — and whether its non-China members stay in or step back',
+            'Whether Partior-style commercial wholesale networks attract issuers beyond their founding banks, proving the model generalises',
+            'Whether regulators outside Asia adopt the Guardian / GL1 frameworks — the test of a genuine global standard versus a regional one',
+            'The relative volume of regulated stablecoin issuance under Hong Kong’s Cap. 656 versus Singapore’s PSA regime, and whether it skews to USD or local-currency issuance',
+            'The net direction of fintech-HQ and talent flows between the two cities',
+          ].map((item, i) => (
+            <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
+              <span className="mt-1 text-xs text-indigo-400">▸</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-8 rounded-xl border border-slate-700 bg-slate-900/50 p-5" data-testid="analysis-take">
+          <p className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">
+            Analyst&apos;s Take
+          </p>
+          <p className="text-slate-300 leading-relaxed">
+            The most defensible reading is that this is specialisation rather than a single
+            race. Across the plausible futures above, the likely outcome is a division of
+            labour — Singapore as a neutral standards-and-commercialisation layer, Hong Kong as
+            a China-facing settlement gateway — with the balance between them set largely by
+            forces neither regulator controls: whether China&apos;s digital-money ecosystem
+            integrates or decouples, and whether value settles over public or private rails.
+            Those forces will be shaped by geopolitics between the major blocs, not by Marina
+            Bay or Central. A confident verdict today would therefore say more about which
+            geopolitical assumption the author has smuggled in than about the merits of either
+            city. The honest conclusion is conditional — and deliberately takes no side on which
+            global financial order ought to prevail.
           </p>
         </div>
       </section>
