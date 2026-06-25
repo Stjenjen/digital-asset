@@ -502,7 +502,7 @@ export default function HKSingaporeResearchPage() {
             ],
             [
               'Notable banking partners',
-              'JPMorgan, DBS, OCBC, UOB, StanChart, HSBC, BNY Mellon, Citi',
+              'JPMorgan, DBS, OCBC, UOB, StanChart, HSBC',
               'HSBC, Hang Seng, StanChart, BOCHK, Goldman Sachs, Hashkey',
             ],
             [
